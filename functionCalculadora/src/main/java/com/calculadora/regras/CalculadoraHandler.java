@@ -52,7 +52,7 @@ public class CalculadoraHandler implements RequestHandler<Calculadora, HandlerRe
     else if (operacao.equals("/")) {
       if (calculadora.getValor2() == 0.0D) {
         throw new CalculadoraNotFoundException(
-          "Não é possivel fazer divisão por 0!;-( Operação: " + calculadora.getOperacao());
+          "Não é possivel fazer divisão por 0!!!;-( Operação: " + calculadora.getOperacao());
       }
       
       context.getLogger().log("[#] Caiu na divisão");
